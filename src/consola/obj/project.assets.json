@@ -1,0 +1,135 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "datos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "modelos": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/datos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/datos.dll": {}
+        }
+      },
+      "modelos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/modelos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/modelos.dll": {}
+        }
+      },
+      "sistema/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "datos": "1.0.0",
+          "modelos": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/sistema.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/sistema.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "datos/1.0.0": {
+      "type": "project",
+      "path": "../datos/datos.csproj",
+      "msbuildProject": "../datos/datos.csproj"
+    },
+    "modelos/1.0.0": {
+      "type": "project",
+      "path": "../modelos/modelos.csproj",
+      "msbuildProject": "../modelos/modelos.csproj"
+    },
+    "sistema/1.0.0": {
+      "type": "project",
+      "path": "../sistema/sistema.csproj",
+      "msbuildProject": "../sistema/sistema.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "datos >= 1.0.0",
+      "modelos >= 1.0.0",
+      "sistema >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\1daw3\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "c:\\Users\\1daw3\\Desktop\\Panaderia\\src\\consola\\consola.csproj",
+      "projectName": "consola",
+      "projectPath": "c:\\Users\\1daw3\\Desktop\\Panaderia\\src\\consola\\consola.csproj",
+      "packagesPath": "C:\\Users\\1daw3\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\1daw3\\Desktop\\Panaderia\\src\\consola\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\1daw3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "c:\\Users\\1daw3\\Desktop\\Panaderia\\src\\datos\\datos.csproj": {
+              "projectPath": "c:\\Users\\1daw3\\Desktop\\Panaderia\\src\\datos\\datos.csproj"
+            },
+            "c:\\Users\\1daw3\\Desktop\\Panaderia\\src\\modelos\\modelos.csproj": {
+              "projectPath": "c:\\Users\\1daw3\\Desktop\\Panaderia\\src\\modelos\\modelos.csproj"
+            },
+            "c:\\Users\\1daw3\\Desktop\\Panaderia\\src\\sistema\\sistema.csproj": {
+              "projectPath": "c:\\Users\\1daw3\\Desktop\\Panaderia\\src\\sistema\\sistema.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
