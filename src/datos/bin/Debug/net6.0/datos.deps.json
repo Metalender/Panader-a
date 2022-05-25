@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "datos/1.0.0": {
+        "dependencies": {
+          "modelos": "1.0.0"
+        },
+        "runtime": {
+          "datos.dll": {}
+        }
+      },
+      "modelos/1.0.0": {
+        "runtime": {
+          "modelos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "datos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "modelos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
